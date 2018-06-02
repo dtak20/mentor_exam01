@@ -2,6 +2,6 @@
   <td><%= author.family_name %></td>
   <td><%= author.first_name %></td>
   <td><%= author.books.length%></td>
-  <td><%= author.books.first.title %></td>
+  <td><%= author.books.maximum("price") %></td>
   <td><%= author.books.first.price_with_tax %></td>
 </tr>
